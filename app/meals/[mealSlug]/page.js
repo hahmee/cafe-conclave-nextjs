@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getMeal } from '@/lib/meals';
 import classes from './page.module.css';
 
+//동적 메타데이터
 export async function generateMetadata({ params }) {
   const meal = getMeal(params.mealSlug);
 
