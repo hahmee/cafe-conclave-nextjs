@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import mealIcon from '@/assets/icons/meal.png';
+import cafeIcon from '@/assets/icons/cafe.png';
 import communityIcon from '@/assets/icons/community.png';
 import eventsIcon from '@/assets/icons/events.png';
 import classes from './page.module.css';
@@ -21,7 +21,7 @@ export default function CommunityPage() {
 
           <ul className={classes.perks}>
             <li>
-              <Image src={mealIcon} alt="매력적인 카페 모습" />
+              <Image src={cafeIcon} alt="매력적인 카페 모습" />
               <p>최고의 카페 정보 공유 &amp; 탐방</p>
             </li>
             <li>

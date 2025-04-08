@@ -3,7 +3,6 @@ import ImageSlideshow from '@/components/images/image-slideshow';
 import classes from './page.module.css';
 
 export default function Home() {
-  console.log('BACKEND..');
   return (
       <>
         <header className={classes.header}>

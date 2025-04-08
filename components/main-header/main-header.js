@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import MainHeaderBackground from './main-header-background';
-import logoImg from '@/assets/coffe_logo.png';
+import logoImg from '@/assets/coffee-icon2.png';
 import classes from './main-header.module.css';
 import NavLink from './nav-link';
 

@@ -6,14 +6,12 @@
   import { getCafes } from '@/lib/cafes';
 
   export const metadata = {
-    title: 'All Cafes',
+    title: 'Café Conclave',
     description: 'Browse the cafes shared by our vibrant community.',
   };
 
   async function Cafes() {
-    console.log('Fetching cafes....');
     const cafes = await getCafes();
-    console.log('cafes', cafes);
 
     return <CafesGrid cafes={cafes} />;
   }
