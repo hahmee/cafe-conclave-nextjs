@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import MainHeaderBackground from './main-header-background';
-import logoImg from '@/assets/logo.png';
+import logoImg from '@/assets/coffe_logo.png';
 import classes from './main-header.module.css';
 import NavLink from './nav-link';
 
@@ -22,7 +22,7 @@ export default function MainHeader() {
               <NavLink href="/cafes">Browse Cafes</NavLink>
             </li>
             <li>
-              <NavLink href="/community">Coffee enthusiasts Community</NavLink>
+              <NavLink href="/community">Coffee Community</NavLink>
             </li>
           </ul>
         </nav>

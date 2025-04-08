@@ -12,12 +12,12 @@ export default function Home() {
           </div>
           <div>
             <div className={classes.hero}>
-              <h1>전국의 멋진 카페를 만나는 공간, Café Conclave</h1>
+              <h1>멋진 카페를 만나는 공간, Café Conclave</h1>
               <p>직접 다녀온 최고의 카페와 생생한 리뷰를 공유해보세요.</p>
             </div>
             <div className={classes.cta}>
               <Link href="/community">커뮤니티 가입하기</Link>
-              <Link href="/cafe">카페 탐험하기</Link>
+              <Link href="/cafes">카페 탐험하기</Link>
             </div>
           </div>
         </header>

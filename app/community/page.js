@@ -10,7 +10,7 @@ export default function CommunityPage() {
       <>
         <header className={classes.header}>
           <h1>
-            One shared passion: <span className={classes.highlight}>카페 문화</span>
+            <span className={classes.highlight}>Cafe Community</span>
           </h1>
           <p>
             커피와 카페 문화를 사랑하는 사람들이 모여 최고의 카페 정보를 공유합니다!

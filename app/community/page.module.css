@@ -3,9 +3,10 @@
   margin: 3rem auto 5rem auto;
   width: 90%;
   max-width: 75rem;
-  color: #ddd6cb;
+  color: #5a4031;
   font-size: 1.5rem;
   text-align: center;
+  font-family: 'Lora', serif;
 }
 
 .header h1 {
@@ -13,6 +14,7 @@
 }
 
 .highlight {
+  font-family: 'Playfair Display', serif;
   background: linear-gradient(90deg, #f9572a, #ff8a05);
   background-clip: text;
   -webkit-background-clip: text;
@@ -27,10 +29,10 @@
 }
 
 .main h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #ddd6cb;
+  color: #5a4031;
 }
 
 .perks {
@@ -53,9 +55,9 @@
 }
 
 .perks p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
-  color: #ddd6cb;
+  color: #5a4031;
 }

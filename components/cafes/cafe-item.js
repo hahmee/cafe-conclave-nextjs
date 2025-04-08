@@ -4,7 +4,6 @@ import Image from 'next/image';
 import classes from './cafe-item.module.css';
 
 export default function CafeItem({ title, slug, image, summary, creator }) {
-    console.log('image', image);
   return (
     <article className={classes.cafe}>
       <header>
@@ -23,7 +22,7 @@ export default function CafeItem({ title, slug, image, summary, creator }) {
       <div className={classes.content}>
         <p className={classes.summary}>{summary}</p>
         <div className={classes.actions}>
-          <Link href={`/cafes/${slug}`}>View Details</Link>
+          <Link href={`/cafes/${slug}`}>자세히 보기</Link>
         </div>
       </div>
     </article>

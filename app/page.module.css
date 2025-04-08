@@ -1,75 +1,114 @@
+/* 헤더 영역: 슬라이드쇼와 텍스트 영역이 좌우로 고르게 배치되도록 수정 */
 .header {
   display: flex;
-  gap: 3rem;
-  margin: 3rem auto;
+  align-items: center;
+  justify-content: space-between;  /* 좌우로 균등 배분 */
+  gap: 2rem;
+  margin: 2rem auto;
   width: 90%;
-  max-width: 75rem;
+  max-width: 1200px;
+  flex-wrap: nowrap;  /* 가능한 한 한 줄에 배치 */
 }
 
+/* 슬라이드쇼 영역: 고정 높이를 지정하고, 내부 이미지가 컨테이너를 꽉 채우도록 함 */
 .slideshow {
-  width: 40rem;
-  height: 25rem;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;             /* 고정 높이 */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;        /* 내부 절대 배치 요소가 있다면 기준이 됨 */
 }
 
+/* ImageSlideshow 내부 이미지에 적용 (만약 별도 스타일 적용 필요시) */
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* 이미지 비율 유지 및 빈 공간 제거 */
+}
+
+/* hero 영역: 중앙 정렬 및 여백 조정 */
 .hero {
-  color: #ddd6cb;
-  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #5a4031; /* 짙은 커피 브라운 */
 }
 
 .hero h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+  color: #5a4031;
 }
 
+.hero p {
+  font-size: 1.3rem;
+  color: #7a5c4d; /* 약간 연한 브라운 */
+  margin-bottom: 1.5rem;
+}
+
+/* CTA 버튼 영역 */
 .cta {
-  font-size: 1.5rem;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .cta a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
-  color: #ffffff;
-  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.cta a:hover,
-.cta a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
-}
-
+/* 첫번째 버튼: 테두리 스타일 (투명 배경) */
 .cta a:first-child {
   background: transparent;
-  font-weight: normal;
-  color: #ff9b05;
-  padding-left: 0;
+  border: 2px solid #a67c52;
+  color: #a67c52;
 }
 
 .cta a:first-child:hover,
 .cta a:first-child:active {
-  background: transparent;
-  color: #f9b241;
+  background: #a67c52;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
+/* 두번째 버튼: 채워진 배경 */
+.cta a:last-child {
+  background: #a67c52;
+  color: #fff;
+  border: none;
+}
+
+.cta a:last-child:hover,
+.cta a:last-child:active {
+  background: #8e6c41;
+  transform: translateY(-2px);
+}
+
+/* 섹션 영역: 텍스트 중심, 깔끔한 레이아웃 */
 .section {
   display: flex;
   flex-direction: column;
-  color: #ddd6cb;
-  font-size: 1.5rem;
-  max-width: 50rem;
+  align-items: center;
+  color: #5a4031;
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  max-width: 900px;
   width: 90%;
   margin: 2rem auto;
   text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #a67c52;
+  padding-bottom: 0.5rem;
 }
