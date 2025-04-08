@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import classes from './meal-item.module.css';
+import classes from './cafe-item.module.css';
 
-export default function MealItem({ title, slug, image, summary, creator }) {
+export default function CafeItem({ title, slug, image, summary, creator }) {
     console.log('image', image);
   return (
-    <article className={classes.meal}>
+    <article className={classes.cafe}>
       <header>
         <div className={classes.image}>
           <Image
@@ -23,7 +23,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <div className={classes.content}>
         <p className={classes.summary}>{summary}</p>
         <div className={classes.actions}>
-          <Link href={`/meals/${slug}`}>View Details</Link>
+          <Link href={`/cafes/${slug}`}>View Details</Link>
         </div>
       </div>
     </article>

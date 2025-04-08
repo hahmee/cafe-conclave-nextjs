@@ -1,21 +1,19 @@
 import MainHeader from '@/components/main-header/main-header';
 import './globals.css';
 
-
-//정적 메타데이터 (layout이 감싸고 있는 모든 페이지에 자동으로 적용)
+// Static metadata (applied automatically to all pages wrapped by this layout)
 export const metadata = {
-  title: 'NextLevel Food',
-  description: 'Delicious meals, shared by a food-loving community.',
+    title: 'Café Conclave',
+    description: 'Unique cafe experiences, shared by a vibrant community of coffee enthusiasts.',
 };
 
-//포장지
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
+    return (
+        <html lang="en">
+        <body>
         <MainHeader />
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

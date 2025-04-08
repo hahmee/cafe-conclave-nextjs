@@ -12,17 +12,17 @@ export default function MainHeader() {
       <MainHeaderBackground />
       <header className={classes.header}>
         <Link className={classes.logo} href="/">
-          <Image src={logoImg} alt="A plate with food on it" priority />
-          NextLevel Food
+          <Image src={logoImg} alt="Café Conclave" priority />
+          Café Conclave
         </Link>
 
         <nav className={classes.nav}>
           <ul>
             <li>
-              <NavLink href="/meals">Browse Meals</NavLink>
+              <NavLink href="/cafes">Browse Cafes</NavLink>
             </li>
             <li>
-              <NavLink href="/community">Foodies Community</NavLink>
+              <NavLink href="/community">Coffee enthusiasts Community</NavLink>
             </li>
           </ul>
         </nav>

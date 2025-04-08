@@ -1,56 +1,56 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-import { getMeal } from '@/lib/meals';
+import { getCafe } from '@/lib/cafes';
 import classes from './page.module.css';
 
 //동적 메타데이터
 export async function generateMetadata({ params }) {
-  const meal = getMeal(params.mealSlug);
+  const cafe = getCafe(params.cafeSlug);
 
-  if (!meal) {
+  if (!cafe) {
     notFound();
   }
 
   return {
-    title: meal.title,
-    description: meal.summary,
+    title: cafe.title,
+    description: cafe.summary,
   };
 }
 
-export default function MealDetailsPage({ params }) {
-  const meal = getMeal(params.mealSlug);
+export default function CafeDetailsPage({ params }) {
+  const cafe = getCafe(params.cafeSlug);
 
-  if (!meal) {
+  if (!cafe) {
     notFound();
   }
 
-  meal.instructions = meal.instructions.replace(/\n/g, '<br />');
+  cafe.instructions = cafe.instructions.replace(/\n/g, '<br />');
 
   return (
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          {params.mealSlug}
+          {params.cafeSlug}
           <Image
-            src={`https://mealsbucket-nextjs-demo-users-image.s3.ap-northeast-2.amazonaws.com/${meal.image}`}
-            alt={meal.title}
+            src={`https://mealsbucket-nextjs-demo-users-image.s3.ap-northeast-2.amazonaws.com/${cafe.image}`}
+            alt={cafe.title}
             fill
           />
         </div>
         <div className={classes.headerText}>
-          <h1>{meal.title}</h1>
+          <h1>{cafe.title}</h1>
           <p className={classes.creator}>
-            by <a href={`mailto:${meal.creator_email}`}>{meal.creator}</a>
+            by <a href={`mailto:${cafe.creator_email}`}>{cafe.creator}</a>
           </p>
-          <p className={classes.summary}>{meal.summary}</p>
+          <p className={classes.summary}>{cafe.summary}</p>
         </div>
       </header>
       <main>
         <p
           className={classes.instructions}
           dangerouslySetInnerHTML={{
-            __html: meal.instructions,
+            __html: cafe.instructions,
           }}
         ></p>
       </main>

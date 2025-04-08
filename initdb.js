@@ -1,7 +1,7 @@
 const sql = require('better-sqlite3');
-const db = sql('meals.db');
+const db = sql('cafes.db');
 
-const dummyMeals = [
+const dummyCafes = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
@@ -191,12 +191,12 @@ async function initData() {
       )
    `);
 
-  for (const meal of dummyMeals) {
-    stmt.run(meal);
+  for (const cafe of dummyCafes) {
+    stmt.run(cafe);
   }
   //
   // const stmt = db.prepare(`
-  // DELETE FROM meals`);
+  // DELETE FROM cafes`);
   // stmt.run()
 
 }
