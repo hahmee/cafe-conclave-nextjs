@@ -1,26 +1,54 @@
-.slideshow {
+/* 전체 슬라이드 컨테이너 */
+.sliderContainer {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.slideshow img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* 각 슬라이드 이미지 */
+.sliderImage {
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   opacity: 0;
-  transform: scale(1.1) translateX(-1rem) rotate(-5deg);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.8s ease-in-out;
+  z-index: 0;
 }
 
-.slideshow .active {
-  z-index: 1;
+/* 활성 슬라이드 이미지 */
+.active {
   opacity: 1;
-  transform: scale(1) translateX(0) rotate(0);
+  transform: scale(1);
+  z-index: 1;
+}
+
+/* 오른쪽 세로 도트 내비게이션 */
+.dotContainer {
+  position: absolute;
+  right: -3rem; /* 음수 값으로 지정하여 사진을 지나서 더 오른쪽에 위치 */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 20;
+}
+
+/* 각 도트 */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* 활성 도트 */
+.activeDot {
+  background: rgba(0, 0, 0, 0.6);
 }
