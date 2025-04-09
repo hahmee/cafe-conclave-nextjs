@@ -10,14 +10,21 @@
 
 /* 왼쪽 영역: 흰색 배경 */
 .leftSide {
-  width: 45%;
+  width: 25%;
   /*background-color: #ffffff;*/
 }
 
 /* 오른쪽 영역: 노란색 또는 gradient 배경 */
 .rightSide {
-  width: 55%;
-  background: linear-gradient(90deg, rgba(255,222,119,0) 0%, rgba(255,222,119,0.5) 40%, #ffde77 60%, #c99828 100%);
+  width: 75%;
+  background: linear-gradient(90deg,
+  rgba(248,241,228,0) 0%,       /* 완전 투명한 커피 크림 */
+  rgba(248,241,228,0.5) 30%,    /* 커피 크림, 약간 투명 */
+  #e5d4bb 50%,                /* 크림과 모카의 중간색 */
+  #d3b893 70%,                /* 라이트 모카 */
+  #a9746e 100%                /* 다소 진한 커피 브라운 */
+  );
+  /*background: linear-gradient(90deg, rgba(255,222,119,0) 0%, rgba(255,222,119,0.5) 40%, #ffde77 60%, #c99828 100%);*/
   height: 100%;
 }
 /* 커피 컵 이미지가 경계선에 걸쳐 보이도록 */

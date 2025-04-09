@@ -1,9 +1,4 @@
-/* ===== 페이지 전체 컨테이너 =====
-   - 전체 너비 100%
-   - 최소 높이: 헤더 높이 보정 포함한 전체 화면 높이
-   - 폰트: sans-serif
-   - 상대 위치: 내부에 절대 위치 요소 배치 가능
-*/
+
 .container {
     width: 100%;
     min-height: calc(-8.75rem + 100vh);
@@ -12,45 +7,25 @@
     position: relative;
     display: flex;
     align-items: center;
-    /*align-items: baseline;*/
-    /*background: #b89b84;*/
 }
 
-/* ===== 메인 섹션 (Hero Section) =====
-   - 높이 600px (필요에 따라 조정)
-   - 좌측과 겹쳐지는 커피 컵 이미지 배치를 위한 relative 위치
-   - flex layout을 사용하여 내부 정렬
-*/
 .heroSection {
     position: relative;
     width: 100%;
     height: 600px;
     display: flex;
     padding: 2rem 10%;
-    /*background: white;*/
 }
 
-/* ===== 왼쪽 영역: 텍스트, 버튼, 슬라이더 =====
-   - 전체 너비의 50%
-   - 내부 여백과 수직 중앙 정렬 (flex)
-*/
 .leftSide {
     width: 50%;
-    /*padding: 60px 5%;*/
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5rem;
-    /*background: #2c1e19;*/
 }
 
-/* ===== 경계선에 겹치는 커피 컵 이미지 =====
-   - 절대 위치 배치하여 왼쪽 영역과 겹치게 배치
-   - left: 65%는 시안에 맞게 조정 (필요시 미세 조정 가능)
-   - 상단 50%, transform으로 정확한 중앙 배치
-   - z-index 10: 다른 내용보다 위에 표시
-*/
 .coffeeCupWrapper {
     position: absolute;
     left: 65%;
@@ -59,10 +34,6 @@
     z-index: 10;
 }
 
-/* ===== 큰 타이틀 =====
-   - 글자 크기 3rem, 진한 글씨
-   - 하단 여백으로 다음 내용과 분리
-*/
 .title {
     font-size: 3rem;
     color: #333;
@@ -72,11 +43,6 @@
 
 }
 
-/* ===== 하이라이트 텍스트 =====
-   - 타이틀 내부에 강조할 텍스트에 적용
-   - 예제 색상: 노란색 계열
-   - 추가로 bold 처리
-*/
 .highlight {
     font-weight: bold;
     font-size: 4rem;
@@ -87,11 +53,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* ===== 서브텍스트 (본문 설명) =====
-   - 약간 큰 글자 크기 (1.125rem)
-   - 부드러운 회색 계열 색상
-   - 적절한 하단 여백
-*/
 .subtext {
     font-size: 1.5rem;
     color: #666;
@@ -99,7 +60,7 @@
     font-family: 'Lora', serif;
 
 }
-/* 추가된 카페 커뮤니티 관련 텍스트 */
+
 .communityText {
     font-size: 1rem;
     color: #555;
@@ -107,43 +68,32 @@
     line-height: 1.5;
     font-family: 'Lora', serif;
 }
-/* ===== CTA (Call To Action) 버튼 영역 =====
-   - 버튼들 간의 간격 및 상단 여백 추가
-*/
+
 .ctaButtons {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
 }
 
-/* ===== 아웃라인 스타일 CTA 버튼 =====
-   - 인라인 블록 요소, 여백 및 패딩 적용
-   - 테두리와 라운딩 효과
-   - 호버 시 배경 및 글자색 전환
-*/
 .ctaOutline {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    border: 2px solid #333;
+    border: 2px solid #9b6f5f;
     border-radius: 4px;
-    color: #333;
+    color: #9b6f5f;
     text-decoration: none;
     font-weight: 600;
     transition: background 0.3s, color 0.3s;
 }
 .ctaOutline:hover {
-    background: #333;
+    background: linear-gradient(90deg, #9b6f5f, #cf9150);
     color: #fff;
 }
 
-/* ===== 채워진 스타일 CTA 버튼 =====
-   - 강한 배경색과 흰색 글자
-   - 호버 시 투명도 효과
-*/
 .ctaFilled {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: #333;
+    background: linear-gradient(90deg, #9b6f5f, #cf9150);
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
@@ -154,24 +104,12 @@
     opacity: 0.8;
 }
 
-/* ===== 오른쪽 슬라이더 영역 =====
-   - 슬라이드 컴포넌트를 감싸는 영역
-   - 상단 여백 추가하여 타이틀/본문과 분리
-*/
 .rightSlider {
-    /*margin-top: 2rem;*/
-    /* 추가: 높이나 min-height를 임시로 지정해서 보이는지 확인 */
     min-height: 300px;
-    /*background-color: rgba(0, 0, 0, 0.1); !* 확인을 위한 배경색 추가 *!*/
     width: 46rem;
     height: 46rem;
 }
 
-/* ===== 작은 이미지 그룹 (예: 커피콩, 커피백 등) =====
-   - 작은 이미지들을 가로로 배치, 간격 적용
-   - 상단 여백 적용
-   - (현재 사용하지 않는다면 필요 시 활성화)
-*/
 .smallImages {
     display: flex;
     gap: 20px;
@@ -181,10 +119,6 @@
     border-radius: 4px;
 }
 
-/* ===== 커피 컵 이미지 스타일 =====
-   - 지정된 너비와 비율 유지
-   - (필요시 크기 조정 가능)
-*/
 .coffeeCup {
     width: 40rem;
     height: auto;

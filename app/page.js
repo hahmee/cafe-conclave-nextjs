@@ -1,10 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import coffeeCupSrc from '@/assets/bbb.png';
-import Image from 'next/image';
 import ImageSlideshow from '@/components/images/image-slideshow';
-import coffeeCupImg from '@/assets/bbb.png'; // 투명 배경의 커피 컵 이미지
 import Link from 'next/link';
 
 export default function Home() {
@@ -34,14 +31,12 @@ export default function Home() {
                             카페 탐험하기
                         </Link>
                     </div>
-                    {/* 필요 시 왼쪽 영역 추가 내용 */}
                 </div>
                 {/* 오른쪽 영역 */}
                 <div className={styles.coffeeCupWrapper}>
                     <div className={styles.rightSlider}>
                         <ImageSlideshow />
                     </div>
-                    {/* 만약 오른쪽 영역에 다른 콘텐츠가 필요하다면 여기에 추가 */}
                 </div>
             </section>
         </main>
