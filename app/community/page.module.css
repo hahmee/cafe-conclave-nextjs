@@ -1,10 +1,10 @@
 .header {
-  gap: 3rem;
+  gap: 1rem;
   margin: 3rem auto 5rem auto;
   width: 90%;
   max-width: 75rem;
   color: #5a4031;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   font-family: 'Lora', serif;
 }
@@ -30,7 +30,7 @@
 
 .main h2 {
   font-family: 'Lora', serif;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
   color: #5a4031;
 }
@@ -56,7 +56,7 @@
 
 .perks p {
   font-family: 'Lora', serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
   color: #5a4031;

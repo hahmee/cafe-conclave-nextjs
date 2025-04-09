@@ -7,7 +7,7 @@ import coffeeImg from '@/assets/cafe4.jpg';
 import coffeeImg2 from '@/assets/cafe12.jpg';
 import coffeeImg3 from '@/assets/cafe5.jpg';
 import coffeeImg4 from '@/assets/cafe3.jpg';
-import coffeeImg5 from '@/assets/cafe9.jpg';
+import coffeeImg5 from '@/assets/cafe13.jpg';
 import classes from './image-slideshow.module.css';
 
 const images = [

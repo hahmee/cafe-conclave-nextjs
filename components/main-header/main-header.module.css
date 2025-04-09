@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8.75rem;
+  height: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   /* font-family: 'Montserrat', sans-serif; */
   font-size: 1.25rem;
 }
@@ -25,19 +25,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   text-decoration: none;
   color: #5a4031;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.11rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .logo img {
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }

@@ -1,14 +1,20 @@
 .header {
-  gap: 3rem;
-  margin: 3rem auto 5rem auto;
-  width: 90%;
-  max-width: 75rem;
+  gap: 1rem;
+  /*margin: 3rem auto 5rem auto;*/
+  /*width: 90%;*/
+  /*max-width: 75rem;*/
   color: #5a4031; /* 짙은 커피 브라운 */
-  font-size: 1.5rem;
+  font-size: 1rem;
+  /*background: #5a4031;*/
+  padding: 2rem 10%;
 }
 
 .header h1 {
   font-family: 'Playfair Display', serif;
+}
+
+.main {
+  padding: 2rem 10%;
 }
 
 .highlight {

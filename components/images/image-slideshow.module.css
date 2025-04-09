@@ -40,8 +40,8 @@
 
 /* 각 도트 */
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.1);
   cursor: pointer;

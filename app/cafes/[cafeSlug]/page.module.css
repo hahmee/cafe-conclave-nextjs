@@ -28,14 +28,14 @@
 
 .headerText h1 {
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .creator {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #cfa69b;
   font-style: italic;
   font-family: 'Lora', serif;
@@ -58,14 +58,14 @@
 }
 
 .summary {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Lora', serif;
 }
 
 .instructions {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: 'Lora', serif;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #13120f;
   border-radius: 8px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
@@ -76,7 +76,7 @@
 }
 
 .loading {
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
   color: #ddd6cb;
   font-weight: bold;
