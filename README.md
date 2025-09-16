@@ -1,5 +1,5 @@
 # Cafe-conclave
-
+Next.js 14의 App Router 및 최신 기술 스택 학습을 목적
 
 ## 상세 내용
 ![img_1.png](img_1.png)
