@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { getCafe } from '@/lib/cafes';
 import classes from './page.module.css';
 
-//동적 메타데이터
 export async function generateMetadata({ params }) {
   const cafe = getCafe(params.cafeSlug);
 
